@@ -10,7 +10,9 @@ const Navbar = () => {
 
   const sendLogout = () => {
     fetch("https://evening-plateau-36916.herokuapp.com/api/v1/users/logout", {
-      method: "get",
+      headers: new Headers({
+        Authorization: `Bearer ${localStorage.getItem("jwt")}`,
+      }),
     }).then((result) => {
       // console.log(result);
       M.toast({

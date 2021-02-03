@@ -13,9 +13,10 @@ const Login = () => {
   const sendDataLogin = () => {
     fetch("https://evening-plateau-36916.herokuapp.com/api/v1/users/login", {
       method: "post",
-      headers: {
+      headers: new Headers({
+        Authorization: `Bearer ${localStorage.getItem("jwt")}`,
         "Content-Type": "application/json",
-      },
+      }),
       body: JSON.stringify({
         email,
         password,

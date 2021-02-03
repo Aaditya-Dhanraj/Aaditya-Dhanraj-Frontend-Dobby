@@ -11,16 +11,20 @@ const CreatePost = () => {
 
   useEffect(() => {
     if (url) {
-      fetch("https://evening-plateau-36916.herokuapp.com/api/v1/posts/uploadPost", {
-        method: "post",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          photo: url,
-        }),
-      })
+      fetch(
+        "https://evening-plateau-36916.herokuapp.com/api/v1/posts/uploadPost",
+        {
+          method: "post",
+          headers: new Headers({
+            Authorization: `Bearer ${localStorage.getItem("jwt")}`,
+            "Content-Type": "application/json",
+          }),
+          body: JSON.stringify({
+            name,
+            photo: url,
+          }),
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           if (data.status === "success") {

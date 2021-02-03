@@ -8,11 +8,15 @@ const Profile = () => {
   const [search, setSearch] = useState("");
   useEffect(() => {
     setTimeout(() => {
-      fetch("https://evening-plateau-36916.herokuapp.com/api/v1/posts/")
+      fetch("https://evening-plateau-36916.herokuapp.com/api/v1/posts/", {
+        headers: new Headers({
+          Authorization: `Bearer ${localStorage.getItem("jwt")}`,
+        }),
+      })
         .then((res) => res.json())
         .then((data) => {
           // console.log(data);
-          console.log(data.data.myPosts);
+          console.log(data);
           setMyPics(data.data.myPosts);
         });
     }, 5000);
