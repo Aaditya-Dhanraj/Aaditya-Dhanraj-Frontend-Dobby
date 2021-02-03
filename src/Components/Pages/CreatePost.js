@@ -11,7 +11,7 @@ const CreatePost = () => {
 
   useEffect(() => {
     if (url) {
-      fetch("/api/v1/posts/uploadPost", {
+      fetch("https://evening-plateau-36916.herokuapp.com/api/v1/posts/uploadPost", {
         method: "post",
         headers: {
           "Content-Type": "application/json",

@@ -11,7 +11,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const sendDataLogin = () => {
-    fetch("/api/v1/users/login", {
+    fetch("https://evening-plateau-36916.herokuapp.com/api/v1/users/login", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

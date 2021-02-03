@@ -14,7 +14,7 @@ const Signup = () => {
   const { state, dispatch } = useContext(UserContext);
 
   const sendDataSignup = () => {
-    fetch("/api/v1/users/signup", {
+    fetch("https://evening-plateau-36916.herokuapp.com/api/v1/users/signup", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
