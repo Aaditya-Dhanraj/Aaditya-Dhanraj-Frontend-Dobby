@@ -75,7 +75,6 @@ const Signup = () => {
   return (
     <div className="my-card">
       <div className="card auth-card input-field">
-        <h2 className="lo">Be-Social</h2>
         <input
           type="text"
           placeholder="Your email"

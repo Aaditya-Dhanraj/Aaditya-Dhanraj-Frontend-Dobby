@@ -68,9 +68,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-wrapper white">
-        <Link to={state ? "/" : "/signup"} className="brand-logo logo a">
-          Be-Social
-        </Link>
+        <Link to={state ? "/" : "/signup"} className="brand-logo logo a"></Link>
         ,
         <ul id="nav-mobile" className="right ullu">
           {renderList()}
