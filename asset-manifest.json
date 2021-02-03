@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Aaditya-Dhanraj-Frontend-Dobby/static/css/main.e1c54920.chunk.css",
+    "main.js": "/Aaditya-Dhanraj-Frontend-Dobby/static/js/main.54394f2b.chunk.js",
+    "main.js.map": "/Aaditya-Dhanraj-Frontend-Dobby/static/js/main.54394f2b.chunk.js.map",
+    "runtime-main.js": "/Aaditya-Dhanraj-Frontend-Dobby/static/js/runtime-main.2ef53cda.js",
+    "runtime-main.js.map": "/Aaditya-Dhanraj-Frontend-Dobby/static/js/runtime-main.2ef53cda.js.map",
+    "static/js/2.5bacf9fa.chunk.js": "/Aaditya-Dhanraj-Frontend-Dobby/static/js/2.5bacf9fa.chunk.js",
+    "static/js/2.5bacf9fa.chunk.js.map": "/Aaditya-Dhanraj-Frontend-Dobby/static/js/2.5bacf9fa.chunk.js.map",
+    "static/js/3.9b5ae7cf.chunk.js": "/Aaditya-Dhanraj-Frontend-Dobby/static/js/3.9b5ae7cf.chunk.js",
+    "static/js/3.9b5ae7cf.chunk.js.map": "/Aaditya-Dhanraj-Frontend-Dobby/static/js/3.9b5ae7cf.chunk.js.map",
+    "index.html": "/Aaditya-Dhanraj-Frontend-Dobby/index.html",
+    "static/css/main.e1c54920.chunk.css.map": "/Aaditya-Dhanraj-Frontend-Dobby/static/css/main.e1c54920.chunk.css.map",
+    "static/js/2.5bacf9fa.chunk.js.LICENSE.txt": "/Aaditya-Dhanraj-Frontend-Dobby/static/js/2.5bacf9fa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ef53cda.js",
+    "static/js/2.5bacf9fa.chunk.js",
+    "static/css/main.e1c54920.chunk.css",
+    "static/js/main.54394f2b.chunk.js"
+  ]
+}
