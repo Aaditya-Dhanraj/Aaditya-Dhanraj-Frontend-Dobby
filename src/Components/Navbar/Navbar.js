@@ -9,7 +9,7 @@ const Navbar = () => {
   const history = useHistory();
 
   const sendLogout = () => {
-    fetch("/api/v1/users/logout", {
+    fetch("https://evening-plateau-36916.herokuapp.com/api/v1/users/logout", {
       method: "get",
     }).then((result) => {
       // console.log(result);

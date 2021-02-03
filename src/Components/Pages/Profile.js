@@ -7,13 +7,15 @@ const Profile = () => {
   const [myPics, setMyPics] = useState([]);
   const [search, setSearch] = useState("");
   useEffect(() => {
-    fetch("/api/v1/posts/")
-      .then((res) => res.json())
-      .then((data) => {
-        // console.log(data);
-        console.log(data.data.myPosts);
-        setMyPics(data.data.myPosts);
-      });
+    setTimeout(() => {
+      fetch("https://evening-plateau-36916.herokuapp.com/api/v1/posts/")
+        .then((res) => res.json())
+        .then((data) => {
+          // console.log(data);
+          console.log(data.data.myPosts);
+          setMyPics(data.data.myPosts);
+        });
+    }, 5000);
   }, []);
 
   const handleChange = (e) => {
